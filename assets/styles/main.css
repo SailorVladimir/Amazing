@@ -37,7 +37,7 @@ h2 {
 p {
     font-size: 36px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .section--header {
@@ -45,7 +45,7 @@ p {
     background-size: cover;
     background-image: url(../images/header.png);
     padding-top: 87px;
-    padding-bottom: 242px;
+    padding-bottom: 259px;
 }
 
 .menu {
@@ -70,7 +70,7 @@ p {
 .face {
     width: 50%;
     height: 500px;
-    background: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/face.png);
 }
@@ -90,6 +90,70 @@ p {
     line-height: 1.2;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: "cableway man ski-boot mountain"
+        "bg-text bg-text skiing bg";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+
+}
+
+.cableway {
+    grid-area: cableway;
+    background-size: contain;
+}
+
+.man {
+    grid-area: man;
+}
+
+.ski-boot {
+    grid-area: ski-boot;
+}
+
+.mountain {
+    grid-area: mountain;
+}
+
+.bg-text {
+    background: #3f729b;
+    grid-area: bg-text;
+    color: #fff;
+    padding-left: 171px;
+    padding-top: 100px;
+}
+
+.bg-text p {
+    margin-top: 30px;
+    margin-bottom: 52px;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-decoration: none;
+    user-select: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.bg-text a {
+    color: #fff;
+    border: #fff solid 2px;
+    padding: 15px 26px;
+}
+
+.skiing {
+    grid-area: skiing;
+}
+
+.bg {
+    background: #3f729b;
+    grid-area: bg;
+}
+
 
 
 
@@ -102,6 +166,10 @@ p {
     .container {
         max-width: 960px;
     }
+    
+    .bg-text{
+        padding-left: 70px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -111,6 +179,12 @@ p {
 
     .slogan h2 {
         margin-top: 50px;
+    }
+
+    .grid {
+        grid-template-areas: "cableway cableway man man  "
+                             "ski-boot ski-boot mountain mountain"
+                             "bg-text bg-text skiing bg";
     }
 }
 
@@ -131,7 +205,7 @@ p {
         width: 100%;
     }
 
-    .slogan p{
+    .slogan p {
         margin-bottom: 30px;
     }
 }
