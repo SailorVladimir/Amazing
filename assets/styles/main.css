@@ -3,3 +3,82 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700');
 
 /* Шрифты конец */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container{
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    margin: 0;
+    line-height: 1.2;
+    font-size: 72px;
+    font-weight: 300;
+}
+
+p{
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.section--header{
+    background-image: url(../images/header.png);
+    padding-top: 87px;
+    padding-bottom: 242px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline{
+    margin-top: 184px;
+    max-width: 570px;
+}
+
+.headline p{
+    font-size: 30px;
+    margin-top: 14px;
+}
+
+.headline p span{
+    font-weight: 700;
+}
+
+
+
+
+
+.Welcome_to_the_personal_site_of_John_Doe___A_pr {
+    font-size: 30px;
+    font-family: "Fira Sans";
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    text-align: left;
+    position: absolute;
+    left: 209.516px;
+    top: 583.121px;
+    z-index: 6;
+  }
+  '
+  
+  .Amazing_Dude__Amazing_Life_ {
+    font-size: 72px;
+    font-family: "Fira Sans";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 209.844px;
+    top: 351.14px;
+    z-index: 7;
+  }
+  '
