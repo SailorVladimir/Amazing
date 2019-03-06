@@ -4,81 +4,182 @@
 
 /* Шрифты конец */
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Fira Sans', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
 }
 
-h1{
+.container--fluid {
+    width: 100%;
+    display: flex;
+}
+
+h1 {
     margin: 0;
     line-height: 1.2;
     font-size: 72px;
     font-weight: 300;
 }
 
-p{
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 36px;
     font-weight: 300;
     line-height: 1.5;
 }
 
-.section--header{
+.section--header {
+    background: no-repeat;
+    background-size: cover;
     background-image: url(../images/header.png);
     padding-top: 87px;
     padding-bottom: 242px;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
 }
 
-.headline{
+.headline {
     margin-top: 184px;
     max-width: 570px;
 }
 
-.headline p{
+.headline p {
     font-size: 30px;
     margin-top: 14px;
 }
 
-.headline p span{
+.headline p span {
     font-weight: 700;
+}
+
+.face {
+    width: 50%;
+    height: 500px;
+    background: no-repeat;
+    background-size: cover;
+    background-image: url(../images/face.png);
+}
+
+.slogan {
+    color: #666;
+    width: 50%;
+}
+
+.slogan h2 {
+    margin: 108px 0 0 56px;
+}
+
+.slogan p {
+    margin: 26px 15px 0px 56px;
+    max-width: 530px;
+    line-height: 1.2;
 }
 
 
 
 
 
-.Welcome_to_the_personal_site_of_John_Doe___A_pr {
-    font-size: 30px;
+
+
+/************************************************************media*************************************************************************/
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .slogan h2 {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .container--fluid {
+        flex-direction: column;
+    }
+
+    .face {
+        width: 100%;
+    }
+
+    .slogan {
+        width: 100%;
+    }
+
+    .slogan p{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    .section--header {
+        padding: 50px 0;
+    }
+
+    .headline {
+        margin-top: 50px;
+    }
+
+    .headline p {
+        font-size: 26px;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .slogan h2 {
+        margin: 40px 15px;
+    }
+
+    .slogan p {
+        margin: 25px 15px;
+    }
+}
+
+
+
+
+.Fusce_bibendum_luctus_massa___ut_tincidunt_lect {
+    font-size: 36px;
     font-family: "Fira Sans";
-    color: rgb(0, 0, 0);
-    line-height: 1.5;
-    text-align: left;
-    position: absolute;
-    left: 209.516px;
-    top: 583.121px;
-    z-index: 6;
-  }
-  '
-  
-  .Amazing_Dude__Amazing_Life_ {
-    font-size: 72px;
-    font-family: "Fira Sans";
-    color: rgb(0, 0, 0);
+    color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: left;
     position: absolute;
-    left: 209.844px;
-    top: 351.14px;
-    z-index: 7;
-  }
-  '
+    left: 854.594px;
+    top: 1066.07px;
+    z-index: 26;
+}
