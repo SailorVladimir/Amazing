@@ -152,6 +152,7 @@ a {
     text-decoration: none;
     user-select: none;
     text-transform: uppercase;
+    text-align: center;
     border-radius: 30px;
 }
 
@@ -193,7 +194,7 @@ a {
     align-items: center;
 }
 
-.rage--content{
+.rage--content {
     margin-left: 40px;
 }
 
@@ -220,6 +221,68 @@ a {
     border: #3db55b solid 2px;
     padding: 12px 16px;
     letter-spacing: 0px;
+}
+
+.section--music {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.spotify {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #2ebd59;
+    width: 50%;
+}
+
+.spotify--content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-right: 88px;
+    margin-top: 112px;
+    margin-bottom: 146px;
+    margin-left: 60px;
+}
+
+.spotify--content p {
+    margin-top: 12px;
+    margin-bottom: 34px;
+}
+
+.spotify a {
+    color: #fff;
+    border: #fff solid 2px;
+    padding: 15px 24px;
+    letter-spacing: 3.5px;
+    max-width: 230px;
+}
+
+.itunes {
+    background-color: #282b2f;
+    width: 50%;
+}
+
+.itunes--content {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    margin-top: 113px;
+    margin-left: 60px;
+}
+
+.itunes--content p {
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+
+.itunes--content a {
+    color: #fff;
+    border: #fff solid 2px;
+    padding: 15px 25px;
+    letter-spacing: 3.5px;
+    max-width: 200px;
 }
 
 
@@ -263,7 +326,7 @@ a {
         margin-top: 50px;
     }
 
-    h2{
+    h2 {
         font-size: 20px;
     }
 
@@ -276,29 +339,42 @@ a {
         margin-bottom: 31px;
     }
 
-    .bg-black{
+    .bg-black {
         width: 0;
     }
 
-    .rage{
+    .rage {
         left: 0;
         width: 50%;
         justify-content: center;
     }
 
-    .rage h2{
+    .rage h2 {
         font-size: 30px;
     }
 
-    .rage h3{
+    .rage h3 {
         font-size: 24px;
     }
 
-    .rage p{
+    .rage p {
         font-size: 18px;
     }
 
-    
+    .spotify--content {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .itunes--content {
+        margin-top: 97px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -325,24 +401,53 @@ a {
     .grid {
         display: grid;
         grid-template-areas: "cableway man"
-                             "ski-boot mountain"
-                             "bg--text skiing";
+            "ski-boot mountain"
+            "bg--text skiing";
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
     }
 
-    .bg--text a{
+    .bg--text a {
         font-size: 13px;
     }
 
-    .rage{
+    .rage {
         width: 100%;
     }
 
-    .night-club{
+    .night-club {
         background-image: url(none);
         height: 500px;
     }
+
+    .spotify--content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .spotify--content p {
+        font-size: 30px;
+    }
+
+    .spotify--content a {
+        letter-spacing: 0;
+        font-size: 19px;
+    }
+
+    .itunes--content {
+        margin-top: 50px;
+    }
+
+    .itunes--content p {
+        font-size: 30px;
+    }
+
+    .itunes--content a {
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+
 }
 
 @media (max-width: 576px) {
@@ -383,21 +488,34 @@ a {
     .grid {
         display: grid;
         grid-template-areas: "cableway man"
-                             "ski-boot mountain"
-                             "bg--text bg--text "
-                             "skiing skiing";
+            "ski-boot mountain"
+            "bg--text bg--text "
+            "skiing skiing";
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto;
     }
 
-    .instagram{
+    .instagram {
         margin-bottom: 30px;
     }
 
-    .skiing{
+    .skiing {
         width: 100%;
     }
+
+    .section--music{
+        flex-direction: column;
+    }
+
+    .spotify{
+        width: 100%;
+    }
+
+    .itunes{
+        width: 100%;
+    }
+
+    .itunes--content{
+        margin-bottom: 50px;
+    }
 }
-
-
-
