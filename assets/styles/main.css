@@ -36,6 +36,7 @@ h2 {
 
 h3 {
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 p {
@@ -199,10 +200,6 @@ a {
 }
 
 
-.rage h3 {
-    text-transform: unset;
-}
-
 .rage h2,
 .rage h3 {
     color: #2ebd59;
@@ -284,6 +281,117 @@ a {
     letter-spacing: 3.5px;
     max-width: 200px;
 }
+
+.section--footer {
+    background-color: #212227;
+}
+
+.container--df {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+
+.section--footer h3 {
+    color: #f9f9f9;
+    margin: 0;
+}
+
+.section--footer p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.about-me {
+    max-width: 288px;
+}
+
+.about-me p {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.about-me .copyright {
+    margin-top: 21px;
+    text-transform: uppercase;
+}
+
+.contact {
+    max-width: 170px;
+}
+
+.information .information__address {
+    margin-top: 27px;
+}
+
+.information .information__phone {
+    margin-top: 18px;
+}
+
+.information p {
+    line-height: 1.5;
+}
+
+.socials {
+    margin-top: 70px;
+}
+
+.socials ul {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.subscribe {
+    max-width: 468px;
+}
+
+.subscribe p {
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4d4e52;
+    max-width: 480px;
+}
+
+.form input {
+    color: #999;
+    text-transform: uppercase;
+    border: 0px;
+    background-color: #4d4e52;
+    padding: 22px 240px 22px 15px;
+}
+
+.button {
+    background: transparent;
+    border: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+.sponsor {
+    margin-top: 76px;
+}
+
+.sponsor__logo ul{
+    padding: 0;
+}
+
+.sponsor__logo li{
+    display: inline;
+    margin-right: 15px;
+}
+
 
 
 
@@ -503,19 +611,19 @@ a {
         width: 100%;
     }
 
-    .section--music{
+    .section--music {
         flex-direction: column;
     }
 
-    .spotify{
+    .spotify {
         width: 100%;
     }
 
-    .itunes{
+    .itunes {
         width: 100%;
     }
 
-    .itunes--content{
+    .itunes--content {
         margin-bottom: 50px;
     }
 }
