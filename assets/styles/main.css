@@ -104,7 +104,7 @@ p {
 }
 
 .grid img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .cableway {
@@ -196,7 +196,7 @@ a {
 }
 
 .rage--content {
-    margin-left: 40px;
+    margin-left: 134px;
 }
 
 
@@ -291,6 +291,7 @@ a {
     justify-content: space-between;
     padding-top: 96px;
     padding-bottom: 104px;
+    flex-wrap: wrap;
 }
 
 .section--footer h3 {
@@ -305,7 +306,7 @@ a {
 }
 
 .about-me {
-    max-width: 288px;
+    width: 24%;
 }
 
 .about-me p {
@@ -319,7 +320,7 @@ a {
 }
 
 .contact {
-    max-width: 170px;
+    width: 15%;
 }
 
 .information .information__address {
@@ -338,16 +339,32 @@ a {
     margin-top: 70px;
 }
 
-.socials ul {
-    color: #999;
+.socials__sites {
+
     text-transform: uppercase;
-    font-size: 14px;
     font-weight: 700;
     margin-top: 25px;
 }
 
+.socials__sites a {
+    display: flex;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 7px;
+    letter-spacing: normal;
+}
+
+.socials__icon {
+    margin-right: 15px;
+    align-self: center;
+}
+
+.socials__icon--facebook {
+    margin-right: 20px;
+}
+
 .subscribe {
-    max-width: 468px;
+    width: 41%;
 }
 
 .subscribe p {
@@ -359,7 +376,6 @@ a {
     display: flex;
     justify-content: space-between;
     background-color: #4d4e52;
-    max-width: 480px;
 }
 
 .form input {
@@ -367,7 +383,8 @@ a {
     text-transform: uppercase;
     border: 0px;
     background-color: #4d4e52;
-    padding: 22px 240px 22px 15px;
+    padding: 22px 190px 22px 15px;
+    width: 200px;
 }
 
 .button {
@@ -383,11 +400,11 @@ a {
     margin-top: 76px;
 }
 
-.sponsor__logo ul{
+.sponsor__logo ul {
     padding: 0;
 }
 
-.sponsor__logo li{
+.sponsor__logo li {
     display: inline;
     margin-right: 15px;
 }
@@ -422,6 +439,30 @@ a {
     .rage--content {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .about-me {
+        width: 50%;
+        order: 1;
+    }
+
+    .contact {
+        width: 50%;
+    }
+
+    .subscribe {
+        width: 60%;
+        order: -1;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .socials{
+        margin-top: 30px;
+    }
+
+    .sponsor{
+        margin-top: 30px;
     }
 }
 
@@ -555,6 +596,10 @@ a {
         text-align: center;
     }
 
+    .subscribe{
+        width: 100%;
+    }
+
 
 }
 
@@ -625,5 +670,22 @@ a {
 
     .itunes--content {
         margin-bottom: 50px;
+    }
+
+    .contact{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-me{
+        width: 100%;
+    }
+
+    .form input{
+        padding-right: 0px;
+    }
+
+    .sponsor__logo li{
+        margin-right: 10px;
     }
 }
