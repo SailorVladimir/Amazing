@@ -1,3 +1,18 @@
-# [Верстка лендинга по PSD макету.](https://sailorvladimir.github.io/Amazing "Amazing") #
+# Верстка лендинга по PSD макету. #
 
-Практика адаптивной вёрстки с использованием Flexbox, Grid.
+[Демо](https://sailorvladimir.github.io/Amazing "Amazing")
+
+## Технологии ##
+ 
+- HTML
+- CSS
+- Grid
+- Git
+- Методология наименования классов БЭМ
+- Адаптивная вёрстка (медиа-запросы)
+
+## Полезные ссылки ##
+
+- [Grid](https://cssreference.io/css-grid/ "Grid in CSS")
+- [БЭМ](http://ru.bem.info/methodology/quick-start/ "Быстрый старт")
+- [Git](https://githowto.com/ru "Обучение git")
